@@ -1,0 +1,101 @@
+html{
+    font-size: 14px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    color: #3f0141;
+    direction:ltr;
+    background-color: rgba(186,164,137,0.893);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: rgb(44, 38, 29);
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+p{
+    color: rgb(79, 40, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.list{
+    padding: 2rem;
+}
+
+.list.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lipstick{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 100%;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.lipstick:hover{
+    transform: scale(1.05);
+}
+
+.lipstick img{
+    width: 100%;
+    display: block;
+}
+
+.lipstick h3{
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #333;
+}
+
+@media (max-width:768px){
+ 
+}
+
+
+@media (max-width:769px)and (max-width:992px){
+.lipstick{
+    width: calc(100% - 1rem);
+}
+html{
+    font-size: 15px;
+}
+}
+
+
+@media(min-width:993px) and (max-width: 1200px){
+    .lipstick{
+        width: calc(33.33% - 1rem);
+    }
+    html{
+        font-size: 16px;
+    }
+}
+
+
+@media(min-width:1201px){
+    .lipstick{
+        width: calc(25% - 1rem);
+    }
+    html{
+        font-size: 16px;
+    }
+}
